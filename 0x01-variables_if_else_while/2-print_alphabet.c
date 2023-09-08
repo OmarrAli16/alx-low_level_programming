@@ -10,9 +10,10 @@ int main(void)
 {
 	char fi = 'a';
 
-	for (fi ; fi <= 'z' ; fi++)
+	while (fi <= 'z')
 	{
 		putchar(fi);
+		fi++;
 	}
 	putchar('\n');
 	return (0);
