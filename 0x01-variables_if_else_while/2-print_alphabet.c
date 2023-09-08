@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	char first = 'a';
+	char fi = 'a';
 
-	for (first ; first <= 'z' ; first++)
+	for (fi ; fi <= 'z' ; fi++)
 	{
-		putchar(first);
+		putchar(fi);
 	}
 	putchar('\n');
 	return (0);
