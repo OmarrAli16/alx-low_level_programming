@@ -1,11 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
- *Description: printing of all the alphabets in lowercase
+ * Description: print all alphabet letters
  *
- * Return : Always 0 (success)
- */
+ * Return: Always 0 (success)
+*/
 int main(void)
 {
 	char fi = 'a';
