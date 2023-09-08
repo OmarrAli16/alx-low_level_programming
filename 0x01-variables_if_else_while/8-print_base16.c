@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
  * main - entry point
  *
  * Description: print numbers of base16 in lowercase
  *
- * return: always 0 (success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
