@@ -14,9 +14,9 @@ int main(void)
 	int num1 = '0';
 	int num2 = '0';
 
-	for (num1 ; num1 <= '8' ; num1++)
+	while (num1 <= '8')
 	{
-		for (num2 ; num2 <= '9' ; num2++)
+		while (num2 <= '9')
 		{
 			if (num1 != num2)
 			{
@@ -28,7 +28,9 @@ int main(void)
 					putchar(',');
 				}
 			}
+		num2++;
 		}
+	num1++;
 	}
 	putchar('\n');
 	return (0);
