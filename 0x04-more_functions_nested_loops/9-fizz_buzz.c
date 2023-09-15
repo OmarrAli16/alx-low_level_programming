@@ -20,7 +20,8 @@ int main(void)
 			printf(" Buzz ");
 		else if (i % 3 == 0 && i % 5 == 0)
 			printf(" FrizzBuzz ");
-		else
+		else if (i == 100)
+			printf(" buzz");
 			printf(" %d ", i);
 	}
 	printf("\n");
