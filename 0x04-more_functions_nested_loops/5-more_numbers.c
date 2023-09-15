@@ -3,8 +3,6 @@
 
 /**
  * more_numbers - a function that prints 10 times the numbers
- *
- * Return: always 0 (success)
  */
 
 void more_numbers(void)
