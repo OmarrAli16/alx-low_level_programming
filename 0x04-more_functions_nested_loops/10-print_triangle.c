@@ -3,7 +3,7 @@
 
 /**
  * print_triangle -a function to print a triangle
- * 
+ *
  * @size: integer for indicating the size
  */
 
