@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strcat - a function for concatenating two strings
+ * _strncat - a function for concatenating two strings
  *
  * @dest: input type char
  *
@@ -18,13 +18,13 @@ char *_strncat(char *dest, char *src, int n)
 	int length;
 	int i;
 
-	length = 0;
-	while (dest[length])
-		length++;
+	for (length = 0; dest[length] != '\0'; length++)
+		;
 	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		dest[length + i] = src[i];
+		dest[length] = src[i];
+		length++;
 	}
-	dest[length + i] = '\0';
+	dest[length++] = '\0';
 	return (dest);
 }
