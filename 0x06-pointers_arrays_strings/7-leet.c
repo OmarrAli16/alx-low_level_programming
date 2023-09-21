@@ -19,13 +19,12 @@ char *leet(char *enc)
 	i = 0;
 	while (*enc)
 	{
-		while (i < sizeof(let) / sizeof(char))
+		for (; i < sizeof(let) / sizeof(char); i++)
 		{
 			if (*enc == let[i] || *enc == let[i] + 32)
 			{
 				*enc = val[i] + 48;
 			}
-			i++;
 		}
 		enc++;
 	}
