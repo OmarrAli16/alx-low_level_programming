@@ -16,16 +16,14 @@ char *leet(char *enc)
 	char *result = enc;
 	unsigned int i;
 
-	i = 0;
 	while (*enc)
 	{
-		while (i < sizeof(let) / sizeof(char))
+		for (i = 0; i < sizeof(let) / sizeof(char); i++)
 		{
 			if (*enc == let[i] || *enc == let[i] + 32)
 			{
 				*enc = val[i] + 48;
 			}
-			i++;
 		}
 		enc++;
 	}
