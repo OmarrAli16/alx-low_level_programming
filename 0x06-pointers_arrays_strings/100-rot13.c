@@ -14,6 +14,7 @@ char *rot13(char *pass)
 	char in13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i = 0;
+	char *result = pass;
 
 	while (*pass)
 	{
@@ -27,5 +28,5 @@ char *rot13(char *pass)
 		}
 	pass++;
 	}
-return (pass);
+return (result);
 }
