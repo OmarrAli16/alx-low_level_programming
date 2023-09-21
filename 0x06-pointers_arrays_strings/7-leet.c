@@ -12,19 +12,20 @@
 char *leet(char *enc)
 {
 	char let[] = {'A', 'E', 'O', 'T', 'L'};
-	char val[] = {4, 3, 0, 7, 1};
+	int val[] = {4, 3, 0, 7, 1};
 	char *result = enc;
 	unsigned int i;
 
 	i = 0;
 	while (*enc)
 	{
-		for (; i < sizeof(let) / sizeof(char); i++)
+		while (i < sizeof(let) / sizeof(char))
 		{
 			if (*enc == let[i] || *enc == let[i] + 32)
 			{
 				*enc = val[i] + 48;
 			}
+			i++;
 		}
 		enc++;
 	}
