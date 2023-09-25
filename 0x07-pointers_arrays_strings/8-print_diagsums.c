@@ -26,6 +26,6 @@ void print_diagsums(int *a, int size)
 	{
 		dig2 = dig2 + a[i * size + (size - 1 - i)];
 	}
-	printf("%d\n", dig1);
+	printf("%d, ", dig1);
 	printf("%d\n", dig2);
 }
