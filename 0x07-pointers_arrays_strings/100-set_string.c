@@ -4,7 +4,7 @@
 /**
  * set_string - a function that sets a pointer to char
  *
- * @*s: double pointer
+ * @s: double pointer
  *
  * @to: char pointer
  */
