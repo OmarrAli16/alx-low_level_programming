@@ -9,7 +9,7 @@
  * Return: the factorial value
  */
 
-int factorial (int n)
+int factorial(int n)
 {
 	if (n < 0)
 	{
