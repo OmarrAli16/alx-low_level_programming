@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		addition = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n",addition);
+		printf("%d\n", addition);
 	}
 	else
 	{
