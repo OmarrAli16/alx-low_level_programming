@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 					break;
 				}
 			}
+			i++;
 		}
 	printf("%d\n", min_coin);
 	}
