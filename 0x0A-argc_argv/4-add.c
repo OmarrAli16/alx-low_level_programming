@@ -5,9 +5,9 @@
 /**
  * main - entry point
  *
- * @argc:
+ * @argc: integet the arguments
  *
- * @argv:
+ * @argv: char of array
  *
  * Return: 0 (success)
  */
