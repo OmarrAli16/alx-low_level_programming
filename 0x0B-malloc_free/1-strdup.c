@@ -24,9 +24,16 @@ char *_strdup(char *str)
 		;
 	}
 	result = malloc(req * sizeof(*str) + 1);
-	for (cpy = 0; cpy < req; cpy++)
+	if (result == 0)
 	{
-		result[cpy] = str[cpy];
+		return (NULL);
+	}
+	else
+	{
+		for (cpy = 0; cpy < req; cpy++)
+				{
+				result[cpy] = str[cpy];
+				}
 	}
 	return (result);
 }
