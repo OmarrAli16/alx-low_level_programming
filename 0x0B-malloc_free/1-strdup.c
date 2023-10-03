@@ -31,9 +31,9 @@ char *_strdup(char *str)
 	else
 	{
 		for (cpy = 0; cpy < req; cpy++)
-				{
-				result[cpy] = str[cpy];
-				}
+		{
+			result[cpy] = str[cpy];
+		}
 	}
 	return (result);
 }
