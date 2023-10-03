@@ -15,28 +15,21 @@
 int main(int argc, char *argv[])
 {
 	int addition;
-	int numb;
-	int i;
+	char *c;
 
-	i = 1;
 	addition = 0;
-	numb = 0;
-	if (argc == 1)
+	while (--argc)
 	{
-		printf("0\n");
-		return (0);
-	}
-	while (i < argc)
-	{
-		i++;
-		numb = atoi(argv[i]);
-			if (atoi(argv[i]) != numb || numb <= 0)
-				{
-				fprintf(stderr, "Error\n");
+		for (c = argv[argc]; *c; c++)
+		{
+			if (*c < 0 || *c > '9')
+			{
+				printf("Error\n");
 				return (1);
-				}
-				addition = addition + numb;
-				}
-				printf("%d\n", addition);
-				return (0);
-				}
+			}
+			addition = addition + atoi(argv[argc]);
+		}
+	}
+	printf("%d\n", addition);
+	return (0);
+}
