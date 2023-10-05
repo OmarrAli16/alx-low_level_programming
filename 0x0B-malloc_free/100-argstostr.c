@@ -30,11 +30,11 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < ac; i++)
+	for (i = 0; i < ac; i++, word_length++)
 	{
 		word_length = word_length + strlen(av[i] + 1);
 				}
-	final = (char *)malloc(word_length + 1);
+	final = (char *)malloc(sizeof(char) * word_length + 1);
 	if (final == NULL)
 	{
 		return (NULL);
