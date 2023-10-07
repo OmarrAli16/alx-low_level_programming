@@ -8,7 +8,7 @@
  *
  * @b: integer variable
  *
- * Return: void
+ * Return: a pounter to allocated memory
  */
 
 void *malloc_checked(unsigned int b)
