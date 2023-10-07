@@ -4,9 +4,11 @@
 #include "main.h"
 
 /**
- * *malloc_checked - a function that allocated memory using malloc
+ * malloc_checked - a function that allocated memory using malloc
  *
  * @b: integer variable
+ *
+ * Return: void
  */
 
 void *malloc_checked(unsigned int b)
