@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "3-calc.h"
 /**
  * main - entry point
  *
@@ -11,7 +11,7 @@
  * Return: always 0 (success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int count_of_bytes1;
 	int count_of_bytes2;
