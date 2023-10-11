@@ -6,7 +6,7 @@
  * print_name - a function that prints a name
  *
  * @name: char for input the name string
- * 
+ *
  * @f: a pointer for the function of printing
  */
 
