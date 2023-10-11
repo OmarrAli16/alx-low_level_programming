@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
+#include "function_pointers.h"
 /**
  * main - entry point
  *
@@ -13,28 +13,23 @@
 
 int main(int argc, char **argv)
 {
-	int count_of_bytes1;
-	int count_of_bytes2;
-	int (*op_func)(int, int);
+	int cs;
+	char *ptr = (char *)imp;
 
-	if (argc != 4)
+	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(98);
+		exit (1);
 	}
-	count_of_bytes1 = atoi(argv[1]);
-	count_of_bytes2 = atoi(argv[3]);
-	op_func = get_op_func(argv[2]);
-	if (!op_func)
+	cs = atoi (argv[1]);
+	if (cs < 0)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(2);
 	}
-	if (!count_of_bytes2 && (argv[2][0] == '/' || argv[2][0] == '%'))
+	while (cs--)
 	{
-		printf("Error\n");
-		exit(100);
+		printf("%02hhx%s", *ptr++, cs ? " " : "\n");
 	}
-	printf("%d\n", op_func(count_of_bytes1, count_of_bytes2));
 	return (0);
 }
