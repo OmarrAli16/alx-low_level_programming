@@ -10,6 +10,8 @@
  * @size: the size of the array
  *
  * @cmp: a pointer for the function
+ *
+ * Return: the index
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
