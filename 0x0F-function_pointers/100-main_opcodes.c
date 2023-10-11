@@ -14,7 +14,7 @@
 int main(int argc, char **argv)
 {
 	int cs;
-	char *ptr = (char *)imp;
+	char *ptr = (char *)main;
 
 	if (argc != 2)
 	{
