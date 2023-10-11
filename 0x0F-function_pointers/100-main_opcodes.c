@@ -13,27 +13,28 @@
 
 int main(int argc, char *argv[])
 {
-	int count_of_bytes;
-	int i;
+	int count_of_bytes1;
+	int count_of_bytes2;
+	int (*op_func)(int, int);
 
-	if (argc != 2)
+	if (argc != 4)
 	{
 		printf("Error\n");
-		return (1);
+		exit(98);
 	}
-	count_of_bytes = atoi(argv[1]);
-	if (count_of_bytes < 0)
+	count_of_bytes1 = atoi(argv[1]);
+	count_of_bytes2 = atoi(argv[3]);
+	op_func = get_op_func(argv[2]);
+	if (!op_func)
 	{
 		printf("Error\n");
-		return (2);
+		exit (99);
 	}
-
-	unsigned char* ptr = (unsigned char*) &imp;
-
-	for (i = 0; i < count_of_bytes; i++)
+	if (!count_of_bytes2 && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
-		printf("%02x", ptr[i]);
+		printf("Error\n");
+		exit(100);
 	}
-	printf("\n");
+	printf("%d\n", op_func(count_of_bytes1, count_of_bytes2));
 	return (0);
 }
