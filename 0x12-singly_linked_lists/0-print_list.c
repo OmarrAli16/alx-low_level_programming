@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * print_listint - a function for printing elements
+ * print_list - a function for printing elements
  *
  * @h:a pointer to the list that will be printed single linked
  *
