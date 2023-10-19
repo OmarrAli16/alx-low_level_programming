@@ -14,10 +14,11 @@ size_t print_list(const list_t *h)
 	size_t num_node;
 
 	num_node = 0;
-	for (; h; num_node++)
+	while (h)
 	{
 		printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
+		num_node++;
 	}
 	return (num_node);
 }
