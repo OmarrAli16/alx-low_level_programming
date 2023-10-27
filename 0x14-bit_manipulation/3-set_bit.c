@@ -6,7 +6,7 @@
  * set_bit - a function to set the value of bit to 1
  *
  * @n: integer pointer to bit
- * 
+ *
  * @index: integer for representing index
  *
  * Return: if success return 1 else -1
